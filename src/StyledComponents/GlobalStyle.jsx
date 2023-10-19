@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
         padding:0;
         box-sizing: border-box;
         outline: none;
-        appareance: none;
         border:none;
         text-decoration: none;
         list-style:none;
