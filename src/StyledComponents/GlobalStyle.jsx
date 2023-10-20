@@ -44,6 +44,16 @@ body{
   background-color: var(--color_1st)
 }
 
+button{
+  display: block;
+  font-family: var(--font_family_2nd);
+  outline: none;
+  border: none;
+  padding: 10px 13px;
+  cursor: pointer;
+
+}
+
 `;
 
 
