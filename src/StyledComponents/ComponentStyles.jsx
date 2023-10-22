@@ -18,6 +18,7 @@ export const MainBannerStyle = styled.section`
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    padding: 2rem;
   }
 
   .banner-textPrimary {
@@ -34,22 +35,276 @@ export const MainBannerStyle = styled.section`
   .banner-img-wrapper {
     width: 400px;
     height: 400px;
-    background-color: seagreen;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: calc();
     align-items: center;
     justify-content: center;
   }
 
-  .banner-image {
-    width: 400px;
-    height: 600px;
+  @keyframes fallingBlock1 {
+    0% {
+      transform: translateY(-54rem);
+    }
+
+    90% {
+      transform: translateY(calc((400px / 3) * 2));
+    }
+
+    95% {
+      transform: translateY(258px);
+    }
+
+    100% {
+      transform: translateY(calc((400px / 3) * 2));
+    }
+  }
+
+  @keyframes fallingBlock2 {
+    0% {
+      transform: translateY(-74rem);
+    }
+
+    90% {
+      transform: translateY(calc(400px / 3));    }
+
+    95% {
+      transform: translateY(124px);
+    }
+
+    100% {
+      transform: translateY(calc(400px / 3));    }
+  }
+
+  @keyframes fallingBlock3 {
+    0% {
+      transform: translateY(-54rem);
+    }
+
+    90% {
+      transform: translateY(calc((400px / 3) * 2));
+    }
+
+    95% {
+      transform: translateY(258px);
+    }
+
+    100% {
+      transform: translateY(calc((400px / 3) * 2));
+    }
+  }
+
+  @keyframes fallingBlock4 {
+    0% {
+      transform: translateY(-54rem);
+    }
+
+    90% {
+      transform: translateY(calc((400px / 3) * 2));
+    }
+
+    95% {
+      transform: translateY(258px);
+    }
+
+    100% {
+      transform: translateY(calc((400px / 3) * 2));
+    }
+  }
+
+  @keyframes fallingBlock5 {
+    0% {
+      transform: translateY(-80rem);
+    }
+
+    90% {
+      transform: translateY(calc(400px / 3));    }
+
+    95% {
+      transform: translateY(124px);
+    }
+
+    100% {
+      transform: translateY(calc(400px / 3));    }
+  }
+
+  @keyframes fallingBlock6 {
+    0% {
+      transform: translateY(-94rem);
+    }
+
+    90% {
+      transform: translateY(2px);    }
+
+    95% {
+      transform: translateY(-9px);
+    }
+
+    100% {
+      transform: translateY(2px);    }
+  }
+
+  @keyframes fallingBlock7 {
+    0% {
+      transform: translateY(-80rem);
+    }
+
+    90% {
+      transform: translateY(calc(400px / 3));    }
+
+    95% {
+      transform: translateY(124px);
+    }
+
+    100% {
+      transform: translateY(calc(400px / 3));    }
+  }
+
+  @keyframes fallingBlock8 {
+    0% {
+      transform: translateY(-90rem);
+    }
+
+    90% {
+      transform: translateY(2px);    }
+
+    95% {
+      transform: translateY(-9px);
+    }
+
+    100% {
+      transform: translateY(2px);   }
+  }
+
+  @keyframes fallingBlock9 {
+    0% {
+      transform: translateY(-90rem);
+    }
+
+    90% {
+      transform: translateY(2px);   }
+
+    95% {
+      transform: translateY(-9px);
+    }
+
+    100% {
+      transform: translateY(2px);   }
   }
 
   .box {
-    background-color: #fff; /* Set your desired background color */
-    height: 100%;
+    position: absolute;
+    width: calc(400px / 3);
+    height: calc(400px / 3);
+  }
+
+  .box1 {
+    top: 0;
+    animation: fallingBlock1 1s linear;
+    transform: translateY(calc((400px / 3) * 2));
+  }
+
+  .box2 {
+    top: 1px;
+    animation: fallingBlock2 1s linear;
+    transform: translateY(calc(400px / 3));
+  }
+
+  .box3 {
+    left: 33.3%;
+    top: 0;
+    animation: fallingBlock3 1.5s linear;
+    transform: translateY(calc((400px / 3) * 2));
+  }
+
+  .box4 {
+    right: 0;
+    top: 0;
+    animation: fallingBlock4 0.9s linear;
+    transform: translateY(calc((400px / 3) * 2));
+  }
+
+  .box5 {
+    right: 0;
+    top: 1px;
+    animation: fallingBlock5 2s linear;
+    transform: translateY(calc(400px / 3));
+  }
+
+  .box6 {
+    top: 0;
+    animation: fallingBlock6 1.7s linear;
+    transform: translateY(2px);  }
+
+  .box7 {
+    left: 33.3%;
+    top: 1px;
+    animation: fallingBlock7 2.2s linear;
+    transform: translateY(calc(400px / 3));
+  }
+
+  .box8 {
+    left: 33.3%;
+    top: 0;
+    animation: fallingBlock8 2.5s linear;
+    transform: translateY(2px);  }
+
+  .box9 {
+    top: 0;
+    right: 0;
+    animation: fallingBlock9 2s linear;
+    transform: translateY(2px);
+  }
+  */
+
+
+
+ 
+
+
+
+/* 
+@keyframes fallingBlock {
+    0% {
+        transform: translateY(-90rem);
+    }
+
+    90% {
+        transform: translateY(1px);
+    }
+
+    95% {
+        transform: translateY(-9px);
+    }
+
+    100% {
+        transform: translateY(1px);
+    }
+} */
+
+
+/* Aplica la misma animación a todas las cajas
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+    animation: fallingBlock 2s linear;
+}
+
+ Define las posiciones iniciales de las cajas */
+/* .box1 { top: 0; left: 0; }
+.box2 { top: 0; left: calc(400px / 3); }
+.box3 { top: 0; left: calc(2 * (400px / 3)); }
+.box4 { top: calc(400px / 3); left: 0; }
+.box5 { top: calc(400px / 3); left: calc(400px / 3); }
+.box6 { top: calc(400px / 3); left: calc(2 * (400px / 3)); }
+.box7 { top: calc(2 * (400px / 3)); left: 0; }
+.box8 { top: calc(2 * (400px / 3)); left: calc(400px / 3); }
+.box9 { top: calc(2 * (400px / 3)); left: calc(2 * (400px / 3)); }  */
+
+
+  .banner-image {
+    width: 400px;
+    height: 600px;
   }
 `;
 

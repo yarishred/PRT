@@ -11,8 +11,8 @@ export const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/skills">
-            <button className="link menu-opt2">skills</button>
+          <NavLink to="/blog">
+            <button className="link menu-opt2">blog</button>
           </NavLink>
         </li>
         <li>
