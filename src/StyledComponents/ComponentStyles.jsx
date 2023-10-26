@@ -323,12 +323,7 @@ export const NavigationStyle = styled.nav`
 // About Section Style
 
 export const AboutSectionStyle = styled(MainBannerStyle)`
-  width: 100%;
-  height: 100vh;
   background-color: salmon;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 // Blog Section Style
@@ -351,14 +346,14 @@ export const ContactSectionStyle = styled(MainBannerStyle)`
 
 // content section
 export const ContentSectionStyle = styled.div`
-  width: 200%;
+  width: 300%;
   height: 100vh;
   background-color: salmon;
   overflow: hidden;
   white-space: nowrap;
 
   .wrapper-scrolling {
-    width: 200vw;
+    width: 300vw;
     height: 100vh;
     display: inline-block;
     display: flex;
