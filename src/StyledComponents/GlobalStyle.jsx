@@ -2,8 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 import CalSans from "../assets/fonts/CalSans-SemiBold.woff2";
 
-
-
 export const GlobalStyle = createGlobalStyle`
  
       @font-face{
@@ -20,6 +18,8 @@ export const GlobalStyle = createGlobalStyle`
         border:none;
         text-decoration: none;
         list-style:none;
+        font-family: var(--primary_font);
+
     }
 
     /* Propiedades personalizadas */
@@ -29,6 +29,7 @@ export const GlobalStyle = createGlobalStyle`
   --color_3rd: #41dbce;
   --color_4th: #f58888;
   --color_5th: #ff9f1c;
+  --coolor_6th:  ##7effb2;
   --border_color: #6e6e6e;
   --secondary_font: "Poppins", sans-serif;
   --primary_font: "CalSans",sans-serif;
@@ -37,11 +38,13 @@ export const GlobalStyle = createGlobalStyle`
 
 body{
   font-family: "Poppins";
+
 }
 
 .app-container{
   display:flex;
-  background-color: var(--color_1st)
+  background-color: var(--color_1st);
+
 }
 
 button{
@@ -55,7 +58,3 @@ button{
 }
 
 `;
-
-
-
-
